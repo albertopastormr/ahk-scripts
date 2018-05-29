@@ -7,5 +7,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #!q::
     InputBox, search_query, StackOverflow search, Enter your urgent question, , 420, 120
     if not ErrorLevel
-        Run "chrome" --newtab https://stackoverflow.com/search?q=%search_query%
+        Run "chrome" --newtab --app="https://stackoverflow.com/search?q=%search_query%"
     Return
